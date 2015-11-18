@@ -77,7 +77,7 @@
                            <children>
                               <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                  <image>
-                                    <Image url="@booking.png" />
+                                    <Image url="@bookingw.png" />
                                  </image>
                               </ImageView>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิว" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
@@ -98,7 +98,7 @@
                            <children>
                               <ImageView fitHeight="85.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                  <image>
-                                    <Image url="@edit.png" />
+                                    <Image url="@editw.png" />
                                  </image>
                                  <GridPane.margin>
                                     <Insets bottom="5.0" />
@@ -127,7 +127,7 @@
                               </Text>
                               <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                  <image>
-                                    <Image url="@cancel.png" />
+                                    <Image url="@cancelw.png" />
                                  </image>
                                  <GridPane.margin>
                                     <Insets bottom="5.0" />
@@ -226,7 +226,7 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="กลับสู่หน้าเดิม" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                              <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="ยกเลิก" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>

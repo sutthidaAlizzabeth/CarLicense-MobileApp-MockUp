@@ -121,7 +121,7 @@
                            <children>
                               <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
                                  <image>
-                                    <Image url="@booking.png" />
+                                    <Image url="@bookingw.png" />
                                  </image>
                               </ImageView>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิว" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">

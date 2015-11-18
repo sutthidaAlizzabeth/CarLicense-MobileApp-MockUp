@@ -58,6 +58,14 @@
                      </GridPane.margin>
                   </Button>
                   <Hyperlink text="&lt;&lt;ลงทะเบียนรับรหัสผ่านสำหรับผู้เข้าใช้งานครั้งแรก&gt;&gt;" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <Text fill="#db0d0d" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="เลขประจำตัวประชาชนหรือรหัสผ่านผิดพลาด" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="50.0" />
+                     </GridPane.margin>
+                  </Text>
                </children>
             </GridPane>
          </children>

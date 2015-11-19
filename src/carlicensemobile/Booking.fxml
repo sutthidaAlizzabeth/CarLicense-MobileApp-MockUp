@@ -24,7 +24,7 @@
               </rowConstraints>
                <children>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิวทำใบขับขี่" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                  <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@arrow.png" />
                      </image>
@@ -32,7 +32,7 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                  <ImageView fx:id="homeBtn" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@home.png" />
                      </image>
@@ -66,7 +66,7 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <GridPane style="-fx-background-color: #B58184;" GridPane.columnSpan="2">
+                        <GridPane fx:id="re" onMouseClicked="#goReserve" style="-fx-background-color: #B58184;" GridPane.columnSpan="2">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
@@ -87,7 +87,7 @@
                               </Text>
                            </children>
                         </GridPane>
-                        <GridPane style="-fx-background-color: #735D6C;" GridPane.rowIndex="1">
+                        <GridPane fx:id="editBookBtn" onMouseClicked="#goBookingEdit" style="-fx-background-color: #735D6C;" GridPane.rowIndex="1">
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                            </columnConstraints>
@@ -111,7 +111,7 @@
                               </Text>
                            </children>
                         </GridPane>
-                        <GridPane style="-fx-background-color: #5F4C5D;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <GridPane fx:id="cancelBookBtn" onMouseClicked="#goCancel" style="-fx-background-color: #5F4C5D;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                            </columnConstraints>

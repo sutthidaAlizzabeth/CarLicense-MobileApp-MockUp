@@ -5,9 +5,20 @@
  */
 package carlicensemobile;
 
+
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -16,12 +27,35 @@ import javafx.fxml.Initializable;
  */
 public class LoginController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    @FXML
+    TextField personId;
+    @FXML
+    PasswordField password;
+    @FXML
+    Button loginBtn;
+    @FXML
+    Text msg;
+    
+    String exId = "123";
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
+    
+    public void goLogin() throws IOException{
+        String id = personId.getText();
+        String pwd = password.getText();
+        if(id.equals(exId) && pwd.equals("123")){
+            Parent page = FXMLLoader.load(getClass().getResource("Portal.fxml"));
+            Scene scene = new Scene(page);
+            Stage stage = (Stage) loginBtn.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+            msg.setVisible(false);
+        }else{
+            msg.setVisible(true);
+        }
+    }
     
 }

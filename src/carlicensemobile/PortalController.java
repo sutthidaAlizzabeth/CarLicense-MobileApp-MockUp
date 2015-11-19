@@ -5,9 +5,16 @@
  */
 package carlicensemobile;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -16,12 +23,50 @@ import javafx.fxml.Initializable;
  */
 public class PortalController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    @FXML
+    GridPane bookBtn;
+    @FXML
+    GridPane scoreBtn;
+    @FXML
+    GridPane mapBtn;
+    @FXML
+    GridPane logoutBtn;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
+        
+    }
+    
+    public void goBook() throws IOException{
+        Parent page = FXMLLoader.load(getClass().getResource("Booking.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) logoutBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void goScore() throws IOException{
+        Parent page = FXMLLoader.load(getClass().getResource("conduct.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) logoutBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void goMap() throws IOException{
+        Parent page = FXMLLoader.load(getClass().getResource("Map.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) logoutBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void goLogout() throws IOException{
+        Parent page = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) logoutBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
     
 }

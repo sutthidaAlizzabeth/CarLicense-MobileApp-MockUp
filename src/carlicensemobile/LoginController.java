@@ -46,7 +46,7 @@ public class LoginController implements Initializable {
     public void goLogin() throws IOException{
         String id = personId.getText();
         String pwd = password.getText();
-        if(id.equals(exId) && pwd.equals("123")){
+        if(id.equals(exId) && pwd.equals("1101500764377")){
             Parent page = FXMLLoader.load(getClass().getResource("Portal.fxml"));
             Scene scene = new Scene(page);
             Stage stage = (Stage) loginBtn.getScene().getWindow();

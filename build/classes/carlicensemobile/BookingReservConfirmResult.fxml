@@ -214,19 +214,14 @@
                   </GridPane>
                   <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" GridPane.halignment="CENTER" GridPane.rowSpan="9" GridPane.valignment="CENTER">
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="คุณได้ทำการจองวันที่ 9 ธันวาคม พ.ศ. 2558" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="การจองวันที่ 9 ธันวาคม พ.ศ. 2558 เรียบร้อย" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="System Bold" size="16.0" />
                            </font>
                         </Text>
                         <GridPane GridPane.rowIndex="1">
                            <children>
-                              <Button fx:id="notConfirmReserve" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#reserveNotConfirm" prefHeight="30.0" prefWidth="100.0" text="ยกเลิก" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                                 <GridPane.margin>
-                                    <Insets />
-                                 </GridPane.margin>
-                              </Button>
-                              <Button fx:id="confirmReserve" layoutX="47.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#reserveConfirm" prefHeight="30.0" prefWidth="100.0" text="ยืนยัน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                              <Button fx:id="goToPortal" layoutX="47.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToPortal" prefHeight="30.0" prefWidth="100.0" text="กลับสู่เมนูหลัก" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                            </children>
                            <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />

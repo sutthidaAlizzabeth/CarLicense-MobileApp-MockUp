@@ -124,7 +124,7 @@
                                     <Image url="@bookingw.png" />
                                  </image>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิว" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิว" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -145,7 +145,7 @@
                                     <Image url="@score.png" />
                                  </image>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ความประพฤติ" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ความประพฤติ" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -161,7 +161,7 @@
                               <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="แผนที่" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="แผนที่" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -193,7 +193,7 @@
                                     <Insets bottom="7.0" />
                                  </GridPane.margin>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ออกจากระบบ" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ออกจากระบบ" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font size="24.0" />
                                  </font>

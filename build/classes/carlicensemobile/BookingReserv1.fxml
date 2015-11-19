@@ -63,118 +63,118 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <MenuButton maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="เลือกจังหวัด" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <MenuButton fx:id="province" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="เลือกจังหวัด" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="กรุงเทพมหานคร                                                    " />
-                      <MenuItem mnemonicParsing="false" text="กระบี่ " />
-                        <MenuItem mnemonicParsing="false" text="กาญจนบุรี" />
-                        <MenuItem mnemonicParsing="false" text="กาฬสินธุ์" />
-                        <MenuItem mnemonicParsing="false" text="กำแพงเพชร" />
-                        <MenuItem mnemonicParsing="false" text="ขอนแก่น" />
-                        <MenuItem mnemonicParsing="false" text="จันทบุรี" />
-                        <MenuItem mnemonicParsing="false" text="ฉะเชิงเทรา" />
-                        <MenuItem mnemonicParsing="false" text="ชลบุรี" />
-                        <MenuItem mnemonicParsing="false" text="ชัยนาท" />
-                        <MenuItem mnemonicParsing="false" text="ชัยภูมิ" />
-                        <MenuItem mnemonicParsing="false" text="ชุมพร " />
-                        <MenuItem mnemonicParsing="false" text="เชียงราย " />
-                        <MenuItem mnemonicParsing="false" text="เชียงใหม่ " />
-                        <MenuItem mnemonicParsing="false" text="ตรัง " />
-                        <MenuItem mnemonicParsing="false" text="ตราด" />
-                        <MenuItem mnemonicParsing="false" text="ตาก" />
-                        <MenuItem mnemonicParsing="false" text="นครนายก" />
-                        <MenuItem mnemonicParsing="false" text="นครปฐม" />
-                        <MenuItem mnemonicParsing="false" text="นครพนม" />
-                        <MenuItem mnemonicParsing="false" text="นครราชสีมา" />
-                        <MenuItem mnemonicParsing="false" text="นครศรีธรรมราช" />
-                        <MenuItem mnemonicParsing="false" text="นครสวรรค์" />
-                        <MenuItem mnemonicParsing="false" text="นนทบุรี" />
-                        <MenuItem mnemonicParsing="false" text="นราธิวาส" />
-                        <MenuItem mnemonicParsing="false" text="น่าน" />
-                        <MenuItem mnemonicParsing="false" text="บึงกาฬ" />
-                        <MenuItem mnemonicParsing="false" text="บุรีรัมย์" />
-                        <MenuItem mnemonicParsing="false" text="ปทุมธานี" />
-                        <MenuItem mnemonicParsing="false" text="ประจวบคีรีขันธ์" />
-                        <MenuItem mnemonicParsing="false" text="ปราจีนบุรี" />
-                        <MenuItem mnemonicParsing="false" text="ปัตตานี" />
-                        <MenuItem mnemonicParsing="false" text="พระนครศรีอยุธยา" />
-                        <MenuItem mnemonicParsing="false" text="พังงา" />
-                        <MenuItem mnemonicParsing="false" text="พัทลุง" />
-                        <MenuItem mnemonicParsing="false" text="พิจิตร" />
-                        <MenuItem mnemonicParsing="false" text="พิษณุโลก" />
-                        <MenuItem mnemonicParsing="false" text="เพชรบุรี" />
-                        <MenuItem mnemonicParsing="false" text="เพชรบูรณ์" />
-                        <MenuItem mnemonicParsing="false" text="แพร่" />
-                        <MenuItem mnemonicParsing="false" text="พะเยา" />
-                        <MenuItem mnemonicParsing="false" text="ภูเก็ต" />
-                        <MenuItem mnemonicParsing="false" text="มหาสารคาม" />
-                        <MenuItem mnemonicParsing="false" text="มุกดาหาร" />
-                        <MenuItem mnemonicParsing="false" text="แม่ฮ่องสอน" />
-                        <MenuItem mnemonicParsing="false" text="ยะลา" />
-                        <MenuItem mnemonicParsing="false" text="ยโสธร" />
+                      <MenuItem mnemonicParsing="false" onAction="#setBangkok" text="กรุงเทพมหานคร                                                    " />
+                      <MenuItem mnemonicParsing="false" onAction="#setKrabi" text="กระบี่ " />
+                        <MenuItem mnemonicParsing="false" onAction="#setKarnjanaburi" text="กาญจนบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setKarasin" text="กาฬสินธุ์" />
+                        <MenuItem mnemonicParsing="false" onAction="#setKampanpet" text="กำแพงเพชร" />
+                        <MenuItem mnemonicParsing="false" onAction="#setKornkan" text="ขอนแก่น" />
+                        <MenuItem mnemonicParsing="false" onAction="#setChantaburi" text="จันทบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setChachengsal" text="ฉะเชิงเทรา" />
+                        <MenuItem mnemonicParsing="false" onAction="#setChonburi" text="ชลบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setChainart" text="ชัยนาท" />
+                        <MenuItem mnemonicParsing="false" onAction="#setChaipoom" text="ชัยภูมิ" />
+                        <MenuItem mnemonicParsing="false" onAction="#setChumporn" text="ชุมพร " />
+                        <MenuItem mnemonicParsing="false" onAction="#setChengrai" text="เชียงราย " />
+                        <MenuItem mnemonicParsing="false" onAction="#setChengmai" text="เชียงใหม่ " />
+                        <MenuItem mnemonicParsing="false" onAction="#setTrung" text="ตรัง " />
+                        <MenuItem mnemonicParsing="false" onAction="#setTrad" text="ตราด" />
+                        <MenuItem mnemonicParsing="false" onAction="#setTark" text="ตาก" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNakornnayok" text="นครนายก" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNakornpatum" text="นครปฐม" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNakornpanum" text="นครพนม" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNakornrakchasrima" text="นครราชสีมา" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNakornsritammarad" text="นครศรีธรรมราช" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNakornsawan" text="นครสวรรค์" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNonthaburi" text="นนทบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNarathiwad" text="นราธิวาส" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNan" text="น่าน" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBungkarp" text="บึงกาฬ" />
+                        <MenuItem mnemonicParsing="false" onAction="#setBurirum" text="บุรีรัมย์" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPratumthani" text="ปทุมธานี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPrajurbkririkun" text="ประจวบคีรีขันธ์" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPrajeanburi" text="ปราจีนบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPatthani" text="ปัตตานี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAyutya" text="พระนครศรีอยุธยา" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPangnga" text="พังงา" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPattharung" text="พัทลุง" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPijit" text="พิจิตร" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPitsanurok" text="พิษณุโลก" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPetburi" text="เพชรบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPetboon" text="เพชรบูรณ์" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPrae" text="แพร่" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPrayal" text="พะเยา" />
+                        <MenuItem mnemonicParsing="false" onAction="#setPhuget" text="ภูเก็ต" />
+                        <MenuItem mnemonicParsing="false" onAction="#setMahasarakarm" text="มหาสารคาม" />
+                        <MenuItem mnemonicParsing="false" onAction="#setMookdaharn" text="มุกดาหาร" />
+                        <MenuItem mnemonicParsing="false" onAction="#setMaehongsorn" text="แม่ฮ่องสอน" />
+                        <MenuItem mnemonicParsing="false" onAction="#setYara" text="ยะลา" />
+                        <MenuItem mnemonicParsing="false" onAction="#setYasothorn" text="ยโสธร" />
                         <MenuItem mnemonicParsing="false" text="ร้อยเอ็ด" />
-                        <MenuItem mnemonicParsing="false" text="ระนอง" />
-                        <MenuItem mnemonicParsing="false" text="ระยอง" />
-                        <MenuItem mnemonicParsing="false" text="ราชบุรี" />
-                        <MenuItem mnemonicParsing="false" text="ลพบุรี" />
-                        <MenuItem mnemonicParsing="false" text="ลำปาง" />
-                        <MenuItem mnemonicParsing="false" text="ลำพูน" />
-                        <MenuItem mnemonicParsing="false" text="เลย" />
-                        <MenuItem mnemonicParsing="false" text="ศรีสะเกษ" />
-                        <MenuItem mnemonicParsing="false" text="สกลนคร" />
-                        <MenuItem mnemonicParsing="false" text="สงขลา" />
-                        <MenuItem mnemonicParsing="false" text="สตูล" />
-                        <MenuItem mnemonicParsing="false" text="สมุทรปราการ" />
-                        <MenuItem mnemonicParsing="false" text="สมุทรสงคราม" />
-                        <MenuItem mnemonicParsing="false" text="สมุทรสาคร" />
-                        <MenuItem mnemonicParsing="false" text="สระแก้ว" />
-                        <MenuItem mnemonicParsing="false" text="สระบุรี" />
-                        <MenuItem mnemonicParsing="false" text="สิงห์บุรี" />
-                        <MenuItem mnemonicParsing="false" text="สุโขทัย" />
-                        <MenuItem mnemonicParsing="false" text="สุพรรณบุรี" />
-                        <MenuItem mnemonicParsing="false" text="สุราษฎร์ธานี" />
-                        <MenuItem mnemonicParsing="false" text="สุรินทร์" />
-                        <MenuItem mnemonicParsing="false" text="หนองคาย" />
-                        <MenuItem mnemonicParsing="false" text="หนองบัวลำภู" />
-                        <MenuItem mnemonicParsing="false" text="อ่างทอง" />
-                        <MenuItem mnemonicParsing="false" text="อุดรธานี" />
-                        <MenuItem mnemonicParsing="false" text="อุทัยธานี" />
-                        <MenuItem mnemonicParsing="false" text="อุตรดิตถ์" />
-                        <MenuItem mnemonicParsing="false" text="อุบลราชธานี" />
-                        <MenuItem mnemonicParsing="false" text="อำนาจเจริญ" />
+                        <MenuItem mnemonicParsing="false" onAction="#setRoied" text="ระนอง" />
+                        <MenuItem mnemonicParsing="false" onAction="#setRanong" text="ระยอง" />
+                        <MenuItem mnemonicParsing="false" onAction="#setRadburi" text="ราชบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setRopburi" text="ลพบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setRampang" text="ลำปาง" />
+                        <MenuItem mnemonicParsing="false" onAction="#setRampoon" text="ลำพูน" />
+                        <MenuItem mnemonicParsing="false" onAction="#setRei" text="เลย" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSrisakerd" text="ศรีสะเกษ" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSakonnakorn" text="สกลนคร" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSongkra" text="สงขลา" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSatoon" text="สตูล" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSamudprakarn" text="สมุทรปราการ" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSamudsongkram" text="สมุทรสงคราม" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSamudsakorn" text="สมุทรสาคร" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSrakaew" text="สระแก้ว" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSraburi" text="สระบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSingburi" text="สิงห์บุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSukothai" text="สุโขทัย" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSuphanburi" text="สุพรรณบุรี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSuradthani" text="สุราษฎร์ธานี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setSurin" text="สุรินทร์" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNongcry" text="หนองคาย" />
+                        <MenuItem mnemonicParsing="false" onAction="#setNongbuarumpu" text="หนองบัวลำภู" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAngtong" text="อ่างทอง" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAudornthani" text="อุดรธานี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAuthaithanee" text="อุทัยธานี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAutharadit" text="อุตรดิตถ์" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAubonradchathani" text="อุบลราชธานี" />
+                        <MenuItem mnemonicParsing="false" onAction="#setAumnadcharoen" text="อำนาจเจริญ" />
                     </items>
                   </MenuButton>
-                  <MenuButton layoutX="45.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="เลือกสำนักงานขนส่ง" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <MenuButton fx:id="Office" layoutX="45.0" layoutY="183.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="เลือกสำนักงานขนส่ง" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="สำนักงานขนส่งเขตพื้นที่ 2                                      " />
-                        <MenuItem mnemonicParsing="false" text="สำนักงานขนส่งเขตพื้นที่ 5" />
-                        <MenuItem mnemonicParsing="false" text="สำนักงานขนส่งเขตพื้นที่ 9" />
+                        <MenuItem mnemonicParsing="false" onAction="#setP2" text="สำนักงานขนส่งเขตพื้นที่ 2                                      " />
+                        <MenuItem mnemonicParsing="false" onAction="#setP5" text="สำนักงานขนส่งเขตพื้นที่ 5" />
+                        <MenuItem mnemonicParsing="false" onAction="#setP9" text="สำนักงานขนส่งเขตพื้นที่ 9" />
                      </items>
                   </MenuButton>
-                  <MenuButton layoutX="45.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="พ.ศ." textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <MenuButton fx:id="Year" layoutX="45.0" layoutY="259.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="พ.ศ." textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="2558                                                                  " />
-                        <MenuItem mnemonicParsing="false" text="2559" />
+                        <MenuItem mnemonicParsing="false" onAction="#setY2558" text="2558                                                                  " />
+                        <MenuItem mnemonicParsing="false" onAction="#setY2559" text="2559" />
                      </items>
                   </MenuButton>
-                  <MenuButton layoutX="45.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="เดือน" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                  <MenuButton fx:id="Month" layoutX="45.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="เดือน" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="มีนาคม" />
-                        <MenuItem mnemonicParsing="false" text="กรกฎาคม                                                             " />
-                        <MenuItem mnemonicParsing="false" text="ตุลาคม" />
-                        <MenuItem mnemonicParsing="false" text="ธันวาคม" />
+                        <MenuItem mnemonicParsing="false" onAction="#setMeenakom" text="มีนาคม" />
+                        <MenuItem mnemonicParsing="false" onAction="#setKarakkadakom" text="กรกฎาคม                                                             " />
+                        <MenuItem mnemonicParsing="false" onAction="#setTurakom" text="ตุลาคม" />
+                        <MenuItem mnemonicParsing="false" onAction="#setThanwakom" text="ธันวาคม" />
                      </items>
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>
                   </MenuButton>
-                  <MenuButton layoutX="45.0" layoutY="364.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="วันที่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                  <MenuButton fx:id="Date" layoutX="45.0" layoutY="364.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" text="วันที่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="9" />
-                        <MenuItem mnemonicParsing="false" text="11" />
-                        <MenuItem mnemonicParsing="false" text="15" />
-                        <MenuItem mnemonicParsing="false" text="23" />
-                        <MenuItem mnemonicParsing="false" text="28                                                                       " />
+                        <MenuItem mnemonicParsing="false" onAction="#setD9" text="9" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD11" text="11" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD15" text="15" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD23" text="23" />
+                        <MenuItem mnemonicParsing="false" onAction="#setD28" text="28                                                                       " />
                      </items>
                   </MenuButton>
                   <Button fx:id="processReserveBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#processReserve" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #714285;" text="ดำเนินการจองคิว" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">

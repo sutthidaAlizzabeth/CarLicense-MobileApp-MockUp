@@ -39,7 +39,10 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="แก้ไขการจอง" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="แก้ไขการจอง" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
                </children>
             </GridPane>
             <ImageView fitHeight="93.0" fitWidth="370.0" pickOnBounds="true" preserveRatio="true" GridPane.valignment="TOP">

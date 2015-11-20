@@ -155,7 +155,10 @@
             </GridPane>
             <GridPane style="-fx-background-color: #714285;" GridPane.rowIndex="1">
                <children>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="คะแนนความประพฤติ" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="คะแนนความประพฤติ" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
                   <ImageView fx:id="backBtn" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@arrow.png" />

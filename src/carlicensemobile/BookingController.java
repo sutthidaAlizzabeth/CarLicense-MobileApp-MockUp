@@ -42,7 +42,7 @@ public class BookingController implements Initializable {
     GridPane cancelBookBtn;
     //!--Booking.fxml--
 
-    //--BookingReserv1--
+    //--BookingReserv--
     @FXML
     ImageView backToBookingBtn;
     @FXML
@@ -57,12 +57,12 @@ public class BookingController implements Initializable {
     MenuButton Date;
     @FXML
     MenuButton Year;
-    //!--BookingReserv1--
+    //!--BookingReserv--
 
-    //--BookingEdit1--
+    //--BookingEdit--
     @FXML
     Button processEditReserveBtn;
-    //!--BookingEdit1--
+    //!--BookingEdit--
 
     //--BookingCancle--
     @FXML
@@ -98,7 +98,7 @@ public class BookingController implements Initializable {
     }
 
     public void goReserve() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingReserv1.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReserv.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) homeBtn.getScene().getWindow();
         stage.setScene(scene);
@@ -114,7 +114,7 @@ public class BookingController implements Initializable {
     }
 
     public void goBookingEdit() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingEdit1.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("BookingEdit.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) homeBtn.getScene().getWindow();
         stage.setScene(scene);
@@ -182,7 +182,7 @@ public class BookingController implements Initializable {
     }
 
     public void reserveNotConfirm() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingReserv1.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReserv.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) notConfirmReserve.getScene().getWindow();
         stage.setScene(scene);
@@ -190,7 +190,7 @@ public class BookingController implements Initializable {
     }
     
     public void reserveEditNotConfirm() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingEdit1.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("BookingEdit.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) notConfirmReserve.getScene().getWindow();
         stage.setScene(scene);

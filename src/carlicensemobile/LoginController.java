@@ -58,4 +58,12 @@ public class LoginController implements Initializable {
         }
     }
     
+    public void goToRegist() throws IOException{
+        Parent page = FXMLLoader.load(getClass().getResource("Regist.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) loginBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
 }

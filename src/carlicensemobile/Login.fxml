@@ -57,7 +57,7 @@
                         <Insets left="20.0" right="20.0" />
                      </GridPane.margin>
                   </Button>
-                  <Hyperlink text="&lt;&lt;ลงทะเบียนรับรหัสผ่านสำหรับผู้เข้าใช้งานครั้งแรก&gt;&gt;" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <Hyperlink onAction="#goToRegist" text="&lt;&lt;ลงทะเบียนรับรหัสผ่านสำหรับผู้เข้าใช้งานครั้งแรก&gt;&gt;" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP" />
                   <Text fx:id="msg" fill="#db0d0d" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="เลขประจำตัวประชาชนหรือรหัสผ่านผิดพลาด" visible="false" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="14.0" />

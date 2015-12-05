@@ -140,7 +140,7 @@
                         </GridPane>
                      </children>
                   </GridPane>
-                  <GridPane maxHeight="-Infinity" minHeight="-Infinity" opacity="0.5" prefHeight="170.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <GridPane maxHeight="-Infinity" minHeight="-Infinity" opacity="0.5" prefHeight="200.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="คำแนะนำในการใช้" underline="true">
                            <font>

@@ -35,7 +35,9 @@ public class BookingController implements Initializable {
     @FXML
     ImageView backToPortalBtn;
     @FXML
-    GridPane reserveBtn;
+    GridPane reserveTrainBtn;
+    @FXML
+    GridPane reserveTestBtn;
     @FXML
     GridPane editBookBtn;
     @FXML

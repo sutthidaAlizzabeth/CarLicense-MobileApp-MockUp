@@ -39,7 +39,7 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิวทำใบขับขี่" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิวสอบทำใบขับขี่" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font size="18.0" />
                      </font></Text>

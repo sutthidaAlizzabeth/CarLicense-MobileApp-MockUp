@@ -100,7 +100,7 @@ public class BookingController implements Initializable {
     }
 
     public void goReserveTest() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingReserv.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTest.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) homeBtn.getScene().getWindow();
         stage.setScene(scene);
@@ -108,7 +108,7 @@ public class BookingController implements Initializable {
     }
     
     public void goReserveTrain() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingReserv.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTrain.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) homeBtn.getScene().getWindow();
         stage.setScene(scene);

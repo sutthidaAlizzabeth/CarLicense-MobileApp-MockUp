@@ -140,7 +140,7 @@
                         </GridPane>
                      </children>
                   </GridPane>
-                  <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="170.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="คำแนะนำในการใช้" underline="true">
                            <font>
@@ -166,7 +166,7 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. การแก้ไขการจองคิวต้องทำล่วงหน้าอย่างน้อย " GridPane.rowIndex="3">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. การแก้ไขการจองคิวต้องทำล่วงหน้าอย่างน้อย 3" GridPane.rowIndex="3">
                            <GridPane.margin>
                               <Insets left="20.0" />
                            </GridPane.margin>
@@ -174,7 +174,7 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. เมื่อกดยกเลิกการจองแล้ว จะถือเป็นผลบังคับใช้ทันที" GridPane.rowIndex="6">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. เมื่อกดยกเลิกการจองแล้ว จะถือเป็นผลบังคับใช้" GridPane.rowIndex="6">
                            <GridPane.margin>
                               <Insets left="20.0" />
                            </GridPane.margin>
@@ -182,7 +182,7 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="และระยะเวลาการจองใหม่" GridPane.rowIndex="5">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="การจองใหม่" GridPane.rowIndex="5">
                            <GridPane.margin>
                               <Insets left="35.0" />
                            </GridPane.margin>
@@ -190,7 +190,7 @@
                               <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3 วันทำการของระยะเวลาการจองเก่า " GridPane.rowIndex="4">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="วันทำการของระยะเวลาการจองเก่า และระยะเวลา" GridPane.rowIndex="4">
                            <font>
                               <Font size="16.0" />
                            </font>

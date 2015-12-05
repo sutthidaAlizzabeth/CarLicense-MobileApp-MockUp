@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CarLicenseMobile.jnlp">
+  <information>
+    <title>CarLicenseMobile</title>
+    <vendor>Alizzabeth</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CarLicenseMobile.jar" size="737411" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CarLicenseMobile" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="carlicensemobile.CarLicenseMobile"  name="CarLicenseMobile" />
+  <update check="always"/>
+</jnlp>

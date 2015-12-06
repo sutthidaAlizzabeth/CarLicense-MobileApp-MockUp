@@ -132,7 +132,7 @@ public class BookingController implements Initializable {
     }
 
     public void goCancel() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingCancle.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTrainConfirm.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) homeBtn.getScene().getWindow();
         stage.setScene(scene);

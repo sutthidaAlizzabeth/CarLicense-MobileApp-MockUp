@@ -120,7 +120,7 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <MenuButton maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" text="เลือกจังหวัด" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <MenuButton disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" text="เลือกจังหวัด" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                     <items>
                       <MenuItem mnemonicParsing="false" text="กรุงเทพมหานคร                                                    " />
                       <MenuItem mnemonicParsing="false" text="กระบี่ " />
@@ -214,7 +214,7 @@
                         <MenuItem mnemonicParsing="false" text="2559" />
                      </items>
                   </MenuButton>
-                  <MenuButton layoutX="45.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" text="เดือน" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                  <MenuButton disable="true" layoutX="45.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" text="เดือน" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
                      <items>
                         <MenuItem mnemonicParsing="false" text="มีนาคม" />
                         <MenuItem mnemonicParsing="false" text="กรกฎาคม                                                             " />
@@ -225,7 +225,7 @@
                         <Insets />
                      </GridPane.margin>
                   </MenuButton>
-                  <MenuButton layoutX="45.0" layoutY="364.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" text="วันที่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                  <MenuButton disable="true" layoutX="45.0" layoutY="364.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" text="วันที่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
                      <items>
                         <MenuItem mnemonicParsing="false" text="9" />
                         <MenuItem mnemonicParsing="false" text="11" />
@@ -234,7 +234,7 @@
                         <MenuItem mnemonicParsing="false" text="28                                                                       " />
                      </items>
                   </MenuButton>
-                  <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #714285;" text="ดำเนินการจองคิว" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                  <Button disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" opacity="0.5" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #714285;" text="ดำเนินการจองคิว" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>

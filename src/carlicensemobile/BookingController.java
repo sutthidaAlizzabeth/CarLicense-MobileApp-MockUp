@@ -170,16 +170,7 @@ public class BookingController implements Initializable {
     public void calcelConfirm() throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("BookingCancleResult.fxml"));
         Scene scene = new Scene(page);
-        Stage stage = (Stage) notCancelBtn.getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @FXML
-    public void calcelNotConfirm() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("Booking.fxml"));
-        Scene scene = new Scene(page);
-        Stage stage = (Stage) notCancelBtn.getScene().getWindow();
+        Stage stage = (Stage) homeBtn.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }

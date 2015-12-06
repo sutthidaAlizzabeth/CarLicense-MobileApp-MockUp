@@ -268,12 +268,12 @@
                         </GridPane>
                         <GridPane layoutX="11.0" layoutY="75.0" GridPane.rowIndex="3">
                            <children>
-                              <Button layoutX="47.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="ยกเลิกการจอง" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                              <Button layoutX="47.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#calcelConfirm" prefHeight="30.0" prefWidth="100.0" text="ยกเลิกการจอง" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                                  <GridPane.margin>
                                     <Insets right="20.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button layoutX="221.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="ปิดหน้าต่าง" GridPane.valignment="BOTTOM">
+                              <Button layoutX="221.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goBooking" prefHeight="30.0" prefWidth="100.0" text="ปิดหน้าต่าง" GridPane.valignment="BOTTOM">
                                  <GridPane.margin>
                                     <Insets left="20.0" />
                                  </GridPane.margin>

@@ -180,7 +180,7 @@
                         <MenuItem mnemonicParsing="false" onAction="#setD28" text="28                                                                       " />
                      </items>
                   </MenuButton>
-                  <Button fx:id="processReserveBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#processReserve" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #714285;" text="ดำเนินการจองคิว" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                  <Button fx:id="processReserveBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#processReserveTest" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #714285;" text="ดำเนินการจองคิว" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font>

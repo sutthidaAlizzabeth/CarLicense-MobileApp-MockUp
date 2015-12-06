@@ -139,8 +139,17 @@ public class BookingController implements Initializable {
         stage.show();
     }
 
-    public void processReserve() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingReservConfirm.fxml"));
+    public void processReserveTrain() throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTrainConfirm.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) homeBtn.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+        //goHome();
+    }
+    
+    public void processReserveTest() throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTestConfirm.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) homeBtn.getScene().getWindow();
         stage.setScene(scene);
@@ -175,8 +184,16 @@ public class BookingController implements Initializable {
         stage.show();
     }
 
-    public void reserveConfirm() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingReservConfirmResult.fxml"));
+    public void reserveTrainConfirm() throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTrainConfirmResult.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) notConfirmReserve.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void reserveTestConfirm() throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTestConfirmResult.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) notConfirmReserve.getScene().getWindow();
         stage.setScene(scene);
@@ -191,8 +208,16 @@ public class BookingController implements Initializable {
         stage.show();
     }
 
-    public void reserveNotConfirm() throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("BookingReserv.fxml"));
+    public void reserveTrainNotConfirm() throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTrain.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) notConfirmReserve.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void reserveTestNotConfirm() throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("BookingReservTest.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) notConfirmReserve.getScene().getWindow();
         stage.setScene(scene);

@@ -9,11 +9,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carlicensemobile.BookingCancleController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carlicensemobile.BookingController">
    <children>
       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="370.0">
          <children>
-            <GridPane opacity="0.5" style="-fx-background-color: #714285;" GridPane.rowIndex="1">
+            <GridPane style="-fx-background-color: #714285;" GridPane.rowIndex="1">
               <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -23,8 +23,11 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิวทำใบขับขี่" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิวทำใบขับขี่" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Text>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@arrow.png" />
                      </image>
@@ -32,7 +35,7 @@
                         <Insets left="10.0" />
                      </GridPane.margin>
                   </ImageView>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                  <ImageView fx:id="homeBtn" fitHeight="20.0" fitWidth="20.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
                      <image>
                         <Image url="@home.png" />
                      </image>
@@ -66,7 +69,7 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <GridPane opacity="0.5" style="-fx-background-color: #B58184;" GridPane.columnSpan="2">
+                        <GridPane opacity="0.5" style="-fx-background-color: #B58184;">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
@@ -80,7 +83,7 @@
                                     <Image url="@bookingw.png" />
                                  </image>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิว" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิวอบรม" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -104,7 +107,7 @@
                                     <Insets bottom="5.0" />
                                  </GridPane.margin>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="แก้ไขการจอง" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="แก้ไขการจอง" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -120,7 +123,7 @@
                               <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ยกเลิกการจอง" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="ยกเลิกการจอง" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
@@ -135,13 +138,34 @@
                               </ImageView>
                            </children>
                         </GridPane>
+                        <GridPane layoutX="10.0" layoutY="10.0" opacity="0.5" style="-fx-background-color: #A06E74;" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                                 <image>
+                                    <Image url="@bookingw.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="จองคิวสอบ" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="106.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
                      </children>
                   </GridPane>
-                  <GridPane maxHeight="-Infinity" minHeight="-Infinity" opacity="0.5" prefHeight="170.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <GridPane maxHeight="-Infinity" minHeight="-Infinity" opacity="0.5" prefHeight="200.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <children>
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="คำแนะนำในการใช้" underline="true">
                            <font>
-                              <Font name="System Bold" size="14.0" />
+                              <Font name="System Bold" size="18.0" />
                            </font>
                            <GridPane.margin>
                               <Insets left="20.0" />
@@ -152,7 +176,7 @@
                               <Insets left="20.0" />
                            </GridPane.margin>
                            <font>
-                              <Font size="14.0" />
+                              <Font size="16.0" />
                            </font>
                         </Text>
                         <Text layoutX="30.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. การจองคิวต้องทำล่วงหน้าอย่างน้อย 3 วันทำการ" GridPane.rowIndex="2">
@@ -160,31 +184,47 @@
                               <Insets left="20.0" />
                            </GridPane.margin>
                            <font>
-                              <Font size="14.0" />
+                              <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. การแก้ไขการจองคิวต้องทำล่วงหน้าอย่างน้อย 3 วันทำการ" GridPane.rowIndex="3">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3. การแก้ไขการจองคิวต้องทำล่วงหน้าอย่างน้อย 3" GridPane.rowIndex="3">
                            <GridPane.margin>
                               <Insets left="20.0" />
                            </GridPane.margin>
                            <font>
-                              <Font size="14.0" />
+                              <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. เมื่อกดยกเลิกการจองแล้ว จะถือเป็นผลบังคับใช้ทันที" GridPane.rowIndex="5">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="4. เมื่อกดยกเลิกการจองแล้ว จะถือเป็นผลบังคับใช้" GridPane.rowIndex="6">
                            <GridPane.margin>
                               <Insets left="20.0" />
                            </GridPane.margin>
                            <font>
-                              <Font size="14.0" />
+                              <Font size="16.0" />
                            </font>
                         </Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ของระยะเวลาการจองเก่า และระยะเวลาการจองใหม่" GridPane.rowIndex="4">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="การจองใหม่" GridPane.rowIndex="5">
                            <GridPane.margin>
                               <Insets left="35.0" />
                            </GridPane.margin>
                            <font>
-                              <Font size="14.0" />
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="วันทำการของระยะเวลาการจองเก่า และระยะเวลา" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="35.0" />
+                           </GridPane.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ทันที" GridPane.rowIndex="7">
+                           <GridPane.margin>
+                              <Insets left="35.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="16.0" />
                            </font>
                         </Text>
                      </children>
@@ -198,31 +238,13 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
                   <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" GridPane.halignment="CENTER" GridPane.rowSpan="2" GridPane.valignment="CENTER">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <GridPane.margin>
-                        <Insets left="10.0" right="10.0" />
-                     </GridPane.margin>
                      <children>
                         <GridPane GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
-                          <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="100.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                          </columnConstraints>
-                          <rowConstraints>
-                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                          </rowConstraints>
                            <children>
                               <Text strokeType="OUTSIDE" strokeWidth="0.0" text="สำนักงานขนส่งเขตพื้นที่ 5 กรุงเทพมหานคร" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM">
                                  <font>
@@ -236,15 +258,22 @@
                               </Text>
                               <CheckBox mnemonicParsing="false" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                            </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
                         </GridPane>
                         <GridPane layoutX="11.0" layoutY="75.0" GridPane.rowIndex="3">
                            <children>
-                              <Button fx:id="confirmCancelBtn" layoutX="47.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="ยกเลิกการจอง" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                              <Button layoutX="47.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="ยกเลิกการจอง" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                                  <GridPane.margin>
                                     <Insets right="20.0" />
                                  </GridPane.margin>
                               </Button>
-                              <Button fx:id="notCancelBtn" layoutX="221.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="ปิดหน้าต่าง" GridPane.valignment="BOTTOM">
+                              <Button layoutX="221.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="ปิดหน้าต่าง" GridPane.valignment="BOTTOM">
                                  <GridPane.margin>
                                     <Insets left="20.0" />
                                  </GridPane.margin>
@@ -289,6 +318,16 @@
                            </rowConstraints>
                         </GridPane>
                      </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="20.0" minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
                   </GridPane>
                </children>
             </GridPane>
